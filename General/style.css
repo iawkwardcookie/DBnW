@@ -1,0 +1,188 @@
+/* ---------------------------------------------------- */
+/* Header, Main Container, and Footer */
+/* ---------------------------------------------------- */
+
+/* Sticky header */
+header, .main-container{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 3px solid rgb(212, 241, 229);
+  word-break: break-all;
+  overflow: hidden;
+  font-size:x-large;
+}
+
+header {
+  height:9vh;
+}
+
+.main-container {
+  border-top: 3px solid rgb(212, 241, 229);
+  z-index: 0;
+}
+
+/* Links inside the navigation bar */
+header a, .main-container a{
+  float: left;
+  color:rgb(91, 156, 78);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* Change color of links on hover */
+header a:hover, header a .selected, .main-container a:hover{
+  text-decoration: none;
+  color:rgb(35, 63, 29);
+  background-color: rgb(212, 241, 229);
+}
+
+/* Right-aligned (split) link inside the navigation bar */
+header a.split, .split, .main-container a.split{
+  float: right;
+  cursor: pointer;
+}
+header a.split:hover, header a .split .selected, .menu-wrap:hover , .main-container a.split:hover{
+  float: right;
+  background-color: rgb(212, 241, 229);
+  color: rgb(35, 63, 29);
+}
+header img {
+  max-width:50px;
+  max-height:50px;
+  width:auto;
+  height:auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  border-top: 3px solid rgb(212, 241, 229);
+  height: 7vh;
+}
+header, footer, .main-container {
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center text here */
+  background-color: rgb(178, 214, 199); 
+  color:rgb(91, 156, 78);
+  text-align: center;
+  min-height:80px;
+}
+
+.menu-contents {
+  visibility: hidden;
+}
+
+.menu-wrap:hover > .menu-contents {
+  visibility: visible;
+}
+
+/* ---------------------------------------------------- */
+/* Main */
+/* ---------------------------------------------------- */
+
+html{
+  overflow-y: auto;
+}
+
+body{
+  background-color:  rgb(212, 241, 229)!important;
+  width:100%;
+}
+main {
+  /* Margin bottom by footer height */
+  background-color: rgb(250, 244, 235);
+  color: rgb(91, 156, 78);
+  text-align: center;
+  margin: 0 auto;
+  width:80%;
+  height:max-content;
+  padding-bottom: 10px;
+  min-height: 84vh;
+}
+main img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+h1{
+  background-color: rgb(212, 241, 229);
+  padding-bottom:10px;
+}
+p{
+  width:80%;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ---------------------------------------------------- */
+/* Forms */
+/* ---------------------------------------------------- */
+
+.form {
+  position: relative;
+  background: rgb(212, 241, 229);
+  width: 80%;
+  margin: 20px auto 20px;
+  padding: 45px;
+  text-align: center;
+  float: center;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.form input {
+  outline: 0;
+  background: rgb(250, 244, 235);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form input .sub {
+  float:right;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(91, 156, 78);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  margin-bottom: 5px;
+  color: rgb(250, 244, 235);
+  font-size: 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: rgb(35, 63, 29);
+}
+
+/* Message at bottom of form */
+.form .message {
+  color: rgb(91, 156, 78);
+  text-decoration: none;
+  margin: 15px 0 0;
+  font-size: 12px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form .message:hover {
+  color: rgb(35, 63, 29);
+}
+
+.row{
+  text-align: center;
+  margin: 0 auto;
+
+}
